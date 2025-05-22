@@ -1,0 +1,494 @@
+/* Fuente Bree - Regular */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeRegular.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* Fuente Bree - Bold */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeBold.otf') format('opentype');
+     font-weight: bold;
+     font-style: normal;
+}
+
+/* Fuente Bree - ExtraBold */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeExtrabold.otf') format('opentype');
+     font-weight: 800;
+     font-style: normal;
+}
+
+/* Fuente Bree - Light */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeLight.otf') format('opentype');
+     font-weight: 300;
+     font-style: normal;
+}
+
+/* Fuente Bree - Thin */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeThin.otf') format('opentype');
+     font-weight: 200;
+     font-style: normal;
+}
+
+/* Fuente Bree - Semibold */
+@font-face {
+     font-family: 'Bree';
+     src: url('../assets/fonts/Bree/BreeSemibold.otf') format('opentype');
+     font-weight: 600;
+     font-style: normal;
+}
+
+/* Fuente Bree - Oblique */
+@font-face {
+     font-family: 'Bree Oblique';
+     src: url('../assets/fonts/Bree/BreeOblique_Reg.otf') format('opentype');
+     font-weight: normal;
+     font-style: oblique;
+}
+
+
+/* Fuente Inter - Regular */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+/* Fuente Inter - Bold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Bold.ttf') format('truetype');
+     font-weight: bold;
+     font-style: normal;
+}
+
+/* Fuente Inter - ExtraBold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-ExtraBold.ttf') format('truetype');
+     font-weight: 800;
+     font-style: normal;
+}
+
+/* Fuente Inter - Black */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Black.ttf') format('truetype');
+     font-weight: 900;
+     font-style: normal;
+}
+
+/* Fuente Inter - Light */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Light.ttf') format('truetype');
+     font-weight: 300;
+     font-style: normal;
+}
+
+/* Fuente Inter - ExtraLight */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-ExtraLight.ttf') format('truetype');
+     font-weight: 200;
+     font-style: normal;
+}
+
+/* Fuente Inter - SemiBold */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-SemiBold.ttf') format('truetype');
+     font-weight: 600;
+     font-style: normal;
+}
+
+/* Fuente Inter - Medium */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Medium.ttf') format('truetype');
+     font-weight: 500;
+     font-style: normal;
+}
+
+/* Fuente Inter - Thin */
+@font-face {
+     font-family: 'Inter';
+     src: url('../assets/fonts/INTER/Inter-Thin.ttf') format('truetype');
+     font-weight: 100;
+     font-style: normal;
+}
+
+/* Titulares */
+h1 {
+     font-family: 'Bree', sans-serif;
+     color:  #FFF;
+     text-shadow: 6px 6px 0px #910048;
+     -webkit-text-stroke-width: 4px;
+     -webkit-text-stroke-color:#CE0058;
+     font-family: Bree;
+     font-size: 76px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 96px;
+     letter-spacing: 3.04px;
+}
+
+h2 {
+     font-family: 'Bree', sans-serif;
+     color:  #CE0058;
+     text-align: center;
+     font-family: Bree;
+     font-size: 56px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 68px;
+}
+
+body, p, span, a, li, label, input, textarea, button, select, small {
+    font-family: 'Inter', sans-serif;
+}
+
+.texto-clientazo {
+     color:#252A2D;
+     font-family: 'Inter', sans-serif;
+     font-size: 28px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 44px;
+}
+
+
+.second-section {
+     color:  #252A2D;
+     text-align: center;
+     font-family: 'Inter', sans-serif;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 40px;
+}
+
+.third-section {
+     color: #252A2D;
+     font-family: 'Inter', sans-serif;
+     font-family: Inter;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 40px;
+}
+
+
+
+/* seccion hover first card */
+.card-integrante {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #FEE0EC;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 24px 0 24px;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+}
+
+.card-integrante:hover {
+  background-color: #CE0058;
+}
+
+/* Fondo magenta por encima (solo si deseas capa aparte) */
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Flechas */
+.arrow-wrapper {
+     position: absolute;
+     top: 24px;
+     right: 32px;
+     width: 16px;
+     height: 16px;
+     z-index: 5;
+}
+.arrow-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.arrow-default {
+  opacity: 1;
+}
+
+.arrow-hover {
+  opacity: 0;
+}
+
+.card-integrante:hover .arrow-default {
+  opacity: 0;
+}
+
+.card-integrante:hover .arrow-hover {
+  opacity: 1;
+}
+
+/* Elementos gráficos */
+.image-block {
+  position: relative;
+  width: 130px;
+  height: 160px;
+  z-index: 2;
+}
+
+/* Planta */
+.plant {
+    position: absolute;
+    bottom: 0;
+    left: -23px;
+    width: 63px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.card-integrante:hover .plant {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Reloj */
+.clock {
+    position: absolute;
+    top: -36px;
+    left: 112%;
+    transform: translate(-50%, -100%);
+    width: 71px;
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.card-integrante:hover .clock {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+/* Chica */
+.girl {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  height: 150px;
+  transition: transform 0.6s ease;
+}
+
+.card-integrante:hover .girl {
+  transform: scale(1.22);
+}
+
+/* Texto */
+.text-block {
+     flex: 1;
+     padding-left: 82px;
+     z-index: 3;
+     display: flex;
+     align-items: center;
+     height: 196px;
+}
+.text-label {
+  font-family: 'Bree', sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #CE0058;
+  transition: color 0.4s ease;
+}
+
+.card-integrante:hover .text-label {
+  color: #ffffff;
+}
+
+
+/* comite */
+.card-comite {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #FFF3DD;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 24px 0 24px;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+}
+
+.card-comite:hover {
+  background-color: #ffa800;
+}
+
+/* Fondo dinámico (opcional) */
+.card-comite .bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Flechas */
+.card-comite .arrow-wrapper {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  width: 16px;
+  height: 16px;
+  z-index: 5;
+}
+
+.card-comite .arrow-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.card-comite .arrow-default {
+  opacity: 1;
+}
+
+.card-comite .arrow-hover {
+  opacity: 0;
+}
+
+.card-comite:hover .arrow-default {
+  opacity: 0;
+}
+
+.card-comite:hover .arrow-hover {
+  opacity: 1;
+}
+
+/* Imagen izquierda */
+.card-comite .image-block {
+  position: relative;
+  width: 130px;
+  height: 160px;
+  z-index: 2;
+}
+
+/* Planta: entra desde derecha a izquierda */
+.card-comite .plant {
+     position: absolute;
+     bottom: 0;
+     left: 79px;
+     width: 80px;
+     transform: translateY(100%);
+     opacity: 0;
+     transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.card-comite:hover .plant {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reloj: entra desde abajo hacia arriba */
+.card-comite .clock {
+  position: absolute;
+  top: -36px;
+  left: -16px;
+  width: 71px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.card-comite:hover .clock {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Chica */
+.card-comite .girl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  transition: transform 0.6s ease;
+}
+
+.card-comite:hover .girl {
+  transform: scale(1.22);
+}
+
+/* Texto */
+.card-comite .text-block {
+  flex: 1;
+  padding-left: 102px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 196px;
+}
+
+.card-comite .text-label {
+  font-family: 'Bree', sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #CE0058;
+  transition: color 0.4s ease;
+}
+
+.card-comite:hover .text-label {
+  color: #ffffff;
+}
+
+/* py section */
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 767.98px) {
+  .py-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+
+
+.py-50 {
+
+     padding-top: 50px;
+     padding-bottom: 50px;
+}
+
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #929292;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 640px;
+}
