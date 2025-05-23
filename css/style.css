@@ -673,7 +673,7 @@ body, p, span, a, li, label, input, textarea, button, select, small {
 
 /* Imagen del slide */
 .modal-img {
-  width: 65%;
+  width: 50%;
   max-width: 500px;
   height: auto;
   margin: 0 auto 1.5rem;
@@ -686,11 +686,13 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   }
 }
 
+
+
+
 /* === TEXTOS EN SWIPER === */
 .swiper h2 {
   font-family: 'Bree', sans-serif;
   font-size: 48px;
-  font-weight: bold;
   color: #C60064;
   margin: 0 auto 2rem;
   text-align: center;
@@ -701,10 +703,10 @@ body, p, span, a, li, label, input, textarea, button, select, small {
 @media (max-width: 767px) {
   .swiper h2 {
     color: #CE0058;
-    font-size: 40px;
+    font-size: 36px;
     text-align: left;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 1.4;
   }
 }
 
@@ -937,3 +939,23 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   opacity: 1;
 }
 
+:root {
+  --swiper-pagination-bullet-inactive-color: #ffffff;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: #CE0058; /* Color del bullet activo */
+}
+
+.comite-swiper .swiper-pagination-bullet {
+  background-color: #9D9D9D;
+  opacity: 1;
+}
+
+.comite-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #CE0058;
+}
+
+button.btn-back.disabled {
+  color: #949C9F !important;
+  cursor: default;
+  pointer-events: none;
+}
