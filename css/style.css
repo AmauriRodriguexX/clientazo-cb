@@ -601,15 +601,14 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   margin-bottom: 6rem !important;
 }
 
-
-/* === MODAL FULLSCREEN PARA INTEGRANTE === */
-.modal-fullscreen {
+/* === MODAL BASE === */
+.modal-fullscreen,
+.modal-fullscreen-comite {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #FFE4EC;
   z-index: 9999;
   display: none;
   justify-content: center;
@@ -622,14 +621,25 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   pointer-events: none;
 }
 
-.modal-fullscreen.active {
+/* Fondo rosa solo para integrante */
+.modal-fullscreen {
+  background-color: #FEE0EC;
+}
+
+/* Fondo crema solo para comité */
+.modal-fullscreen-comite {
+  background-color: #FFF3DD;
+}
+
+.modal-fullscreen.active,
+.modal-fullscreen-comite.active {
   display: flex;
   opacity: 1;
   transform: scale(1);
   pointer-events: auto;
 }
 
-/* Contenedor interno */
+/* Contenedor interno del modal */
 .modal-inner {
   position: relative;
   width: 100%;
@@ -644,7 +654,7 @@ body, p, span, a, li, label, input, textarea, button, select, small {
 /* Botón cerrar */
 .btn-close-modal {
   position: absolute;
-  top: clamp(-1rem, -5vw, -1rem); /* se adapta según el tamaño de pantalla */
+  top: clamp(-1rem, -5vw, -1rem);
   right: clamp(-1rem, -2vw, 0.5rem);
   background: none;
   border: none;
@@ -652,32 +662,28 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   z-index: 10;
 }
 
-
 .btn-close-modal img {
   width: 32px;
   height: 32px;
 }
 
-
+/* Imagen del slide */
 .modal-img {
   width: 65%;
-  max-width: 500px; 
+  max-width: 500px;
   height: auto;
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem;
   display: block;
-  margin-left: auto;
-  margin-right: auto; 
 }
-
 
 @media (max-width: 480px) {
   .modal-img {
-    width: 80%; 
+    width: 80%;
   }
 }
 
-/* Título */
-.integrante-swiper h2 {
+/* === TEXTOS EN SWIPER === */
+.swiper h2 {
   font-family: 'Bree', sans-serif;
   font-size: 48px;
   font-weight: bold;
@@ -689,7 +695,7 @@ body, p, span, a, li, label, input, textarea, button, select, small {
 }
 
 @media (max-width: 767px) {
-  .integrante-swiper h2 {
+  .swiper h2 {
     color: #CE0058;
     font-size: 40px;
     text-align: left;
@@ -698,16 +704,16 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   }
 }
 
-/* Swiper */
-.integrante-swiper {
+/* === SWIPER GENERAL === */
+.swiper {
   width: 100%;
 }
 
-.integrante-swiper .swiper-wrapper {
+.swiper-wrapper {
   display: flex;
 }
 
-.integrante-swiper .swiper-slide {
+.swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -736,7 +742,7 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   }
 }
 
-/* Navegación */
+/* === NAVEGACIÓN GENERAL === */
 .swiper-nav {
   display: flex;
   justify-content: space-between;
@@ -753,13 +759,12 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   font-family: 'Inter', sans-serif;
   color: #252A2D;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 26px;
   cursor: pointer;
 }
 
-/* Botón combinado (flecha + texto) */
+/* Botón siguiente (combinado) */
 .transition-button {
   display: inline-flex;
   align-items: center;
@@ -780,7 +785,7 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   overflow: hidden;
 }
 
-/* Icono (flecha) visible por defecto */
+/* Icono flecha */
 .btn-next-icon {
   display: inline-block;
   width: 23px;
@@ -792,8 +797,6 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   object-fit: contain;
 }
 
-
-
 /* Texto (Entendido) oculto por defecto */
 .btn-next-text {
   opacity: 0;
@@ -803,7 +806,7 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   margin-left: 0;
 }
 
-/* Al expandirse en el último slide */
+/* Botón expandido */
 .transition-button.expand {
   width: 180px;
   justify-content: flex-start;
@@ -816,9 +819,117 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   transform: scale(0.8);
 }
 
-
 .transition-button.expand .btn-next-text {
   opacity: 1;
   visibility: visible;
+}
+
+
+/* === table slide === */
+
+/* Contenedor */
+.bono-table-wrapper {
+  display: inline-block;
+  background-color: #FFF3DD;
+  border-radius: 8px;
+  border: 2px solid #CE0058;
+}
+
+/* Tabla */
+.bono-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.bono-table th,
+.bono-table td {
+  padding: 1rem;
+  border-bottom: 2px dashed #CE0058;
+}
+
+.bono-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bono-table thead tr {
+  border-bottom: 2px solid #CE0058;
+}
+
+.bono-table thead th {
+  color: #CE0058;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Texto con borde (stroke) */
+.stroke-text {
+  font-family: 'Bree', sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: #FFFFFF;
+  -webkit-text-stroke: 2px #CE0058;
+}
+
+.stroke-text-2 {
+  font-family: 'Bree', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #FFFFFF;
+  -webkit-text-stroke: 2px #CE0058;
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+  .stroke-text {
+    font-size: 28px;
+  }
+
+  .stroke-text-2 {
+    font-size: 40px;
+  }
+}
+
+
+/* Tooltip */
+.tooltip-icon {
+  position: relative;
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.tooltip-icon img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #5E6A71;
+  color: white;
+  text-align: left;
+  border-radius: 10px;
+  padding: 16px;
+  position: absolute;
+  z-index: 999;
+  width: 230px;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-87%);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-icon:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
