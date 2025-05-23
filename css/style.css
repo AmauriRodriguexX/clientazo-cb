@@ -142,6 +142,19 @@ h1 {
      letter-spacing: 3.04px;
 }
 
+@media (max-width: 767px) {
+  h1 {
+    color:#FFF;
+    text-align: left;
+    text-shadow: 3px 3px 0px #910048;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:#CE0058;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: 2.56px;
+  }
+}
+
 h2 {
      font-family: 'Bree', sans-serif;
      color:  #CE0058;
@@ -151,6 +164,18 @@ h2 {
      font-style: normal;
      font-weight: 400;
      line-height: 68px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    color:#CE0058;
+    text-align: left;
+    font-family: 'Bree', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+  }
 }
 
 body, p, span, a, li, label, input, textarea, button, select, small {
@@ -166,6 +191,18 @@ body, p, span, a, li, label, input, textarea, button, select, small {
      line-height: 44px;
 }
 
+@media (max-width: 767px) {
+  .texto-clientazo {
+    color: #252A2D;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+  }
+}
+
 
 .second-section {
      color:  #252A2D;
@@ -177,14 +214,36 @@ body, p, span, a, li, label, input, textarea, button, select, small {
      line-height: 40px;
 }
 
+@media (max-width: 767px) {
+  .second-section {
+    color:#252A2D;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+  }
+}
+
 .third-section {
      color: #252A2D;
      font-family: 'Inter', sans-serif;
-     font-family: Inter;
      font-size: 24px;
      font-style: normal;
      font-weight: 400;
      line-height: 40px;
+}
+@media (max-width: 767px) {
+  .third-section {
+    color: #252A2D;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+  }
 }
 
 
@@ -479,12 +538,11 @@ body, p, span, a, li, label, input, textarea, button, select, small {
 
 
 .py-50 {
-
      padding-top: 50px;
      padding-bottom: 50px;
 }
 
-
+/* Footer */
 .footer-line {
   border: none;
   border-top: 1px solid #929292;
@@ -492,3 +550,274 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   width: 100%;
   max-width: 640px;
 }
+
+.gentera-logo {
+  transform: translate(5px, -6px);
+}
+
+.link-footer {
+  color: #CE0058;
+  text-decoration: underline;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.address-footer {
+  color: #252A2D;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 767px) {
+  .address-footer {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .gap-5 {
+    gap: 2rem !important;
+  }
+}
+
+.gentera-section-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .gentera-section-footer {
+    justify-content: flex-start;
+  }
+}
+
+.mt-5rem {
+  margin-bottom: 6rem !important;
+}
+
+
+/* === MODAL FULLSCREEN PARA INTEGRANTE === */
+.modal-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFE4EC;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 2rem;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.modal-fullscreen.active {
+  display: flex;
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* Contenedor interno */
+.modal-inner {
+  position: relative;
+  width: 100%;
+  max-width: 768px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón cerrar */
+.btn-close-modal {
+  position: absolute;
+  top: -3rem;
+  right: -1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn-close-modal img {
+  width: 32px;
+  height: 32px;
+}
+
+
+.modal-img {
+  width: 65%;
+  max-width: 500px; 
+  height: auto;
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+@media (max-width: 480px) {
+  .modal-img {
+    width: 80%; 
+  }
+}
+
+/* Título */
+.integrante-swiper h2 {
+  font-family: 'Bree', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #C60064;
+  margin: 0 auto 2rem;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+  .integrante-swiper h2 {
+    color: #CE0058;
+    font-size: 40px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 60px;
+  }
+}
+
+/* Swiper */
+.integrante-swiper {
+  width: 100%;
+}
+
+.integrante-swiper .swiper-wrapper {
+  display: flex;
+}
+
+.integrante-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Paginación (dots) */
+.swiper-pagination {
+  position: absolute;
+  margin: 0 auto 2rem;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet-active {
+  background: #CE0058 !important;
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination {
+    text-align: left !important;
+    left: 1rem !important;
+    right: auto;
+  }
+}
+
+/* Navegación */
+.swiper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Botón Atrás */
+.btn-back {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  color: #252A2D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+/* Botón combinado (flecha + texto) */
+.transition-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  width: 68px;
+  background-color: #C60064;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Icono (flecha) visible por defecto */
+.btn-next-icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 24px;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  object-fit: contain;
+}
+
+
+
+/* Texto (Entendido) oculto por defecto */
+.btn-next-text {
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  margin-left: 0;
+}
+
+/* Al expandirse en el último slide */
+.transition-button.expand {
+  width: 180px;
+  justify-content: flex-start;
+  padding-left: 50px;
+  gap: 12px;
+}
+
+.transition-button.expand .btn-next-icon {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+
+.transition-button.expand .btn-next-text {
+  opacity: 1;
+  visibility: visible;
+}
+

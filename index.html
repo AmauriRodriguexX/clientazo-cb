@@ -12,6 +12,8 @@
      <!-- Estilos personalizados -->
      <link rel="stylesheet" href="css/clientazo.min.css">
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 
 </head>
 
@@ -63,12 +65,12 @@
                     tarjetas para ver la mecánica de cada una.
                </p>
 
-               <div class="row  mt-5">
+               <div class="row mt-5">
 
                     <!-- Imagen mobile: Integrante -->
                     <div class="col-12 d-block d-md-none mb-3">
                          <img src="assets/mobile/integrante-true.png" alt="Integrante mobile"
-                              class="img-fluid w-100 rounded-4">
+                              class="img-fluid w-100 rounded-4 mb-3 img-integrante-mobile">
                     </div>
 
                     <!-- Imagen mobile: Comité -->
@@ -156,13 +158,14 @@
                     <!-- Texto -->
                     <div class="col-md-6 text-start">
                          <h2 class="mb-4 text-start">¿Qué pasa si no gane?</h2>
-                         <p class="mb-3 third-section">¡Ánimo!, siempre hay otra oportunidad. Primero pide a tu promotor te indique que te falto para llevarte la recompensa.</p>
+                         <p class="mb-3 third-section">¡Ánimo!, siempre hay otra oportunidad. Primero pide a tu promotor
+                              te indique que te falto para llevarte la recompensa.</p>
                          <p class="mb-0 third-section">
                               Comprométete con tu grupo, pongan todo su esfuerzo.
                          </p>
                     </div>
 
-                     <!-- Imagen desktop -->
+                    <!-- Imagen desktop -->
                     <div class="col-md-6 d-none d-md-block">
                          <img src="assets/desktop/oportunidad-ganar.jpg" alt="Entrega bonificación desktop"
                               class="img-fluid rounded-4 w-100">
@@ -179,54 +182,123 @@
      </section>
 
      <footer class="footer py-5 text-start text-md-center">
-  <div class="container">
+          <div class="container">
 
-    <!-- Logo + Empresa -->
-    <div class="mb-4 text-start text-md-center">
-      <img src="assets/Logo/cb-logo.png" alt="Compartamos Banco" class="mb-2" height="50">
-      <p class="mb-1 justify-content-center d-flex align-items-center">
-        Una empresa de
-        <img src="assets/Logo/gentera_logo.png" alt="Gentera" >
-      </p>
-      <small class="text-muted">© 2025 Gentera S. A. B.</small>
-    </div>
+               <!-- Logo + Empresa -->
+               <div class="mb-4 text-start text-md-center">
+                    <img src="assets/Logo/cb-logo.png" alt="Compartamos Banco" class="mb-4" height="56">
+                    <p class="mb-1 gentera-section-footer">
+                         Una empresa de
+                         <img src="assets/Logo/gentera_logo.png" alt="Gentera" class="gentera-logo">
+                    </p>
+                    <small class="text-muted">© 2025 Gentera S. A. B.</small>
+               </div>
 
-    <!-- Redes sociales -->
-    <div class="mb-4 d-flex justify-content-start justify-content-md-center gap-3">
-      <a href="#"><img src="assets/footer/facebook.png" alt="Facebook" height="24"></a>
-      <a href="#"><img src="assets/footer/instagram.png" alt="Instagram" height="24"></a>
-      <a href="#"><img src="assets/footer/youtube.png" alt="YouTube" height="24"></a>
-      <a href="#"><img src="assets/footer/tiktok.png" alt="TikTok" height="24"></a>
-    </div>
+               <!-- Redes sociales -->
+               <div class="mb-4 d-flex justify-content-start justify-content-md-center gap-5">
+                    <a href="#"><img src="assets/Logo/Facebook.png" alt="Facebook" height="32"></a>
+                    <a href="#"><img src="assets/Logo/Instagram.png" alt="Instagram" height="32"></a>
+                    <a href="#"><img src="assets/Logo/YouTube.png" alt="YouTube" height="32"></a>
+                    <a href="#"><img src="assets/Logo/TikTok.png" alt="TikTok" height="32"></a>
+               </div>
 
-    <!-- Línea -->
-    <hr class="footer-line">
+               <!-- Línea -->
+               <hr class="footer-line">
 
-    <!-- Descubre -->
-    <div class="mb-4 text-start text-md-center">
-      <strong class="d-block mb-2">DESCUBRE</strong>
-      <div class="d-flex justify-content-start justify-content-md-center gap-3 flex-wrap">
-        <a href="#" class="text-decoration-none" style="color: #CE0058;">Tarjetas</a>
-        <span class="text-muted">•</span>
-        <a href="#" class="text-decoration-none" style="color: #CE0058;">Inversiones</a>
-        <span class="text-muted">•</span>
-        <a href="#" class="text-decoration-none" style="color: #CE0058;">Seguros</a>
-      </div>
-    </div>
+               <!-- Descubre -->
+               <div class="mb-4 text-start text-md-center">
+                    <strong class="d-block mb-2">DESCUBRE</strong>
+                    <div class="d-flex justify-content-start justify-content-md-center gap-3 flex-wrap">
+                         <a href="#" class="link-footer">Tarjetas</a>
+                         <span class="text-muted">•</span>
+                         <a href="#" class="link-footer">Inversiones</a>
+                         <span class="text-muted">•</span>
+                         <a href="#" class="link-footer">Seguros</a>
+                    </div>
+               </div>
 
-    <!-- Línea -->
-    <hr class="footer-line">
+               <!-- Línea -->
+               <hr class="footer-line">
 
-    <!-- Legal -->
-    <small class="d-block mb-2 text-muted">
-      Banco Compartamos, SA, Institución de Banca Múltiple, Av. Insurgentes Sur 1458, Actipan, Benito Juárez, 03230 Ciudad de México, CDMX
-    </small>
-    <a href="#" class="text-decoration-none" style="color: #CE0058;">Términos y Condiciones</a>
+               <!-- Legal -->
+               <small class="d-block mb-2 address-footer">
+                    Banco Compartamos, SA, Institución de Banca Múltiple, Av. Insurgentes Sur 1458, Actipan, Benito
+                    Juárez, 03230 Ciudad de México, CDMX
+               </small>
+               <a href="#" class="link-footer">Términos y Condiciones</a>
 
-  </div>
-</footer>
+          </div>
+     </footer>
 
 
+     <!-- Modal Integrante -->
+     <div id="modalIntegrante" class="modal-fullscreen">
+          <div class="modal-inner">
+     
+               <!-- Botón cerrar -->
+               <button class="btn-close-modal" onclick="closeModal('modalIntegrante')">
+                    <img src="assets/Logo/Close.png" alt="Cerrar" />
+               </button>
+     
+               <!-- Swiper -->
+               <div class="swiper integrante-swiper">
+                    <div class="swiper-wrapper">
+                         <!-- Slide 1 -->
+                         <div class="swiper-slide text-center">
+                              <img src="assets/general/pago-puntual-integrante.png" alt="Imagen 1" class="modal-img">
+                              <h2>Mi grupo pagó puntual en todas las fichas.</h2>
+                         </div>
+     
+                         <!-- Slide 2 -->
+                         <div class="swiper-slide text-center">
+                              <img src="assets/general/renovacion-credito-integrante.png" alt="Imagen 2" class="modal-img">
+                              <h2>Renovamos el crédito de forma inmediata.</h2>
+                         </div>
+     
+                         <!-- Slide 3 -->
+                         <div class="swiper-slide text-center">
+                              <img src="assets/general/incremento-monto-integrante-300.png" alt="Imagen 3" class="modal-img">
+                              <h2>Si tu crédito es de <b>$25,000</b> o <b>menor</b>, y aumentas <b>$3,500</b> en la
+                                   renovación...</h2>
+                         </div>
+     
+                         <!-- Slide 4 -->
+                         <div class="swiper-slide text-center">
+                              <img src="assets/general/recompensa-integrante-300.png" alt="Imagen 4" class="modal-img">
+                              <h2>¡Te llevas una recompensa de <b>$300</b> pesos!</h2>
+                         </div>
+     
+                         <!-- Slide 5 -->
+                         <div class="swiper-slide text-center">
+                              <img src="assets/general/incremento-monto-integrante-600.png" alt="Imagen 5" class="modal-img">
+                              <h2>Si tu crédito es de <b>$25,000</b> o <b>mayor</b> y aumentas $3,500 en la renovación...
+                              </h2>
+                         </div>
+     
+                         <!-- Slide 6 -->
+                         <div class="swiper-slide text-center">
+                              <img src="assets/general/recompensa-intengrante-600.png" alt="Imagen 6" class="modal-img">
+                              <h2>¡Te llevas una recompensa de <b>$600</b> pesos!</h2>
+                         </div>
+     
+                    </div>
+     
+                    <!-- Paginación tipo dots -->
+                    <div class="swiper-pagination mt-5rem"></div>
+     
+                    <!-- Navegación -->
+                    <div class="swiper-nav mt-5">
+                         <button class="btn-back">Atrás</button>
+                         <button class="btn-next transition-button">
+                              <img class="btn-next-icon" src="assets/Logo/arrow.png" alt="Siguiente" width="23" height="23">
+                              <span class="btn-next-text">Entendido</span>
+                         </button>
+                    </div>
+     
+               </div>
+     
+          </div>
+     </div>
 
 
 
@@ -235,7 +307,11 @@
 
      <!-- Tu JS personalizado -->
      <script src="js/main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-</body>
+
+
+
+
 
 </html>
