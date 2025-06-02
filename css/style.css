@@ -609,7 +609,7 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -969,8 +969,9 @@ button.btn-back.disabled {
   color:#252A2D;
   font-family: 'Inter', sans-serif;
   font-size: 28px;
+  margin-top: 32px;
   font-style: normal;
-  width: 93%;
+  width: 100%;
   font-weight: 500;
   line-height: 40px;
 }
