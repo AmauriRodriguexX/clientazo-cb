@@ -693,7 +693,6 @@ body, p, span, a, li, label, input, textarea, button, select, small {
   color: #C60064;
   margin: 0 auto 2rem;
   text-align: center;
-  padding: 0 1rem;
   line-height: 1.4;
 }
 
@@ -1048,4 +1047,42 @@ button.btn-back.disabled {
     top: var(--swiper-pagination-top, auto);
     left: -20px;
     width: 100%;
+}
+
+
+
+/*Estilos tablas  */
+
+.bono-comite-wrapper {
+  text-align: left;
+}
+
+.bono-titulo {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.bono-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.bono-tabla thead tr {
+  background-color: #910048;
+  color: white;
+}
+
+.bono-tabla th,
+.bono-tabla td {
+  border: 1px solid #000;
+  padding: 0.75rem;
+}
+
+.bono-comite-final {
+  color: #D10063;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
