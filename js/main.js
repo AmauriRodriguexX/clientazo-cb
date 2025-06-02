@@ -46,6 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
       });
+
+      // Mostrar botón "Entendido" si solo hay una slide
+      if (integranteSwiper.slides.length === 1) {
+        btnBack?.classList.add('disabled');
+        btnNext?.classList.add('expand');
+      }
     }
   };
 
@@ -94,6 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
       });
+
+      // Mostrar botón "Entendido" si solo hay una slide
+      if (comiteSwiper.slides.length === 1) {
+        btnBackComite?.classList.add('disabled');
+        btnNextComite?.classList.add('expand');
+      }
     }
   };
 
